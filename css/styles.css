@@ -5809,9 +5809,13 @@ button.close {
 body {
   background-image: url("../skateboard-images/bg.jpg"); }
 
+img {
+  max-width: 100%; }
+
 .feature {
   position: relative;
-  height: 337px; }
+  height: 337px;
+  border: 10px solid #FDFDFD; }
 
 .feature::before {
   position: absolute;
@@ -5823,6 +5827,43 @@ body {
   left: 0; }
 
 .post {
-  background-color: #f7f6f2; }
+  background-color: #FDFDFD;
+  border: 10px solid #FDFDFD; }
+
+.sk8er-sm, .sk8er-long, .sk8er-tall {
+  border: 10px solid #FDFDFD;
+  position: relative; }
+
+.lance-mountain {
+  border: 10px solid #FDFDFD;
+  background-image: url("../skateboard-images/sk8er-4.png");
+  height: 222px; }
+
+.rodney-mullen {
+  background-image: url("../skateboard-images/sk8er-3.png");
+  height: 222px; }
+
+.sk8er-long {
+  background-image: url("../skateboard-images/sk8er-1.png");
+  height: 222px; }
+
+.sk8er-tall {
+  background-image: url("../skateboard-images/sk8er-2.png");
+  height: 464px; }
+
+h5 {
+  color: #FDFDFD;
+  font-size: 33px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  top: 33%; }
+
+.board-gallery {
+  background-color: #FDFDFD; }
+
+.board-gallery > img {
+  border: 10px solid #FDFDFD; }
 
 /*# sourceMappingURL=styles.css.map */

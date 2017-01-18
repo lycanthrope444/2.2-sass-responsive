@@ -2,18 +2,24 @@ $grid-gutter-width: 10px;
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-$offwhite: #f7f6f2;
+$offwhite: #FDFDFD;
+
+@mixin uniform-border() {
+  border: 10px solid $offwhite;
+}
 
 body {
   background-image: url('../skateboard-images/bg.jpg');
 }
 
-
+img{
+  max-width: 100%;
+}
 
 .feature{
   position: relative;
   height: 337px;
-
+  @include uniform-border();
 
 }
 
@@ -29,4 +35,52 @@ body {
 
 .post{
   background-color: $offwhite;
+  @include uniform-border();
+}
+
+.sk8er-sm{
+  @include uniform-border();
+  position: relative;
+}
+
+.lance-mountain{
+  @include uniform-border();
+  background-image: url('../skateboard-images/sk8er-4.png');
+  height: 222px;
+}
+
+.rodney-mullen{
+  background-image: url('../skateboard-images/sk8er-3.png');
+  height: 222px;
+}
+
+.sk8er-long{
+  @extend .sk8er-sm;
+  background-image: url('../skateboard-images/sk8er-1.png');
+  height: 222px;
+}
+
+.sk8er-tall{
+  @extend .sk8er-sm;
+  background-image: url('../skateboard-images/sk8er-2.png');
+  height: 464px;
+}
+
+
+h5{
+  color: $offwhite;
+  font-size: 33px;
+  position:absolute;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  top: 33%;
+}
+
+.board-gallery{
+  background-color: $offwhite;
+}
+
+.board-gallery > img{
+  @include uniform-border();
 }
