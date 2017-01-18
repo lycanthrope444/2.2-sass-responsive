@@ -1,4 +1,20 @@
 body {
   background-image: url("../skateboard-images/bg.jpg"); }
 
+.main-body {
+  padding: 5px 50px 0 50px; }
+
+.feature {
+  position: relative;
+  background-image: url("../skateboard-images/top-img.png"); }
+
+.feature::before {
+  position: absolute;
+  content: '';
+  background-image: url("../skateboard-images/grid.png");
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
 /*# sourceMappingURL=styles.css.map */
