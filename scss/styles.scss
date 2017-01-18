@@ -16,6 +16,10 @@ img{
   max-width: 100%;
 }
 
+.page-links{
+
+}
+
 .site-links{
   position: relative;
   text-align: center;
@@ -35,17 +39,29 @@ img{
   @include uniform-border();
   background-image: url('../skateboard-images/top-image.png');
   background-size: cover;
+  overflow: hidden;
 }
 
-.feature::after{
-  position: absolute;
-  content:'';
-  background-image: url('../skateboard-images/grid.png');
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
+.peralta-logo{
+  position:absolute;
+  z-index: 100;
 }
+
+.grid-control{
+  position:absolute;
+
+}
+
+// .feature::after{
+//   position: absolute;
+//   content:'';
+//   background-image: url('../skateboard-images/grid.png');
+//   background-size: cover;
+//   top:0;
+//   bottom:0;
+//   right:0;
+//   left:0;
+// }
 
 .post{
   background-color: $offwhite;
