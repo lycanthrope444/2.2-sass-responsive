@@ -6,6 +6,12 @@ $offwhite: #FDFDFD;
 
 @mixin uniform-border() {
   border: 10px solid $offwhite;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+@mixin grayshadow(){
+  box-shadow: 0px 4px 0px #81807C;
 }
 
 body {
@@ -27,10 +33,10 @@ img{
   font-size: 13px;
   color: $offwhite;
   height: 40px;
-  width: 25%;
   background-color: #B32731;
   text-decoration: none;
   padding-top: 14px;
+  @include grayshadow;
 }
 
 .feature{
@@ -49,19 +55,10 @@ img{
 
 .grid-control{
   position:absolute;
-
+  opacity: .7;
+  top:0;
+  left:0;
 }
-
-// .feature::after{
-//   position: absolute;
-//   content:'';
-//   background-image: url('../skateboard-images/grid.png');
-//   background-size: cover;
-//   top:0;
-//   bottom:0;
-//   right:0;
-//   left:0;
-// }
 
 .post{
   background-color: $offwhite;
@@ -120,5 +117,11 @@ h5{
 }
 
 .contact-info{
+  @include uniform-border();
   background-color: $offwhite;
+}
+
+h6{
+  font-size: 17px;
+  text-transform: capitalize;
 }
