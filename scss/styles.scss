@@ -46,6 +46,8 @@ img{
 .lance-mountain{
   @include uniform-border();
   background-image: url('../skateboard-images/sk8er-4.png');
+  background-size: cover;
+  background-position: right;
   height: 222px;
 }
 
@@ -57,12 +59,14 @@ img{
 .sk8er-long{
   @extend .sk8er-sm;
   background-image: url('../skateboard-images/sk8er-1.png');
+  background-position: center;
   height: 222px;
 }
 
 .sk8er-tall{
   @extend .sk8er-sm;
   background-image: url('../skateboard-images/sk8er-2.png');
+  background-position: right;
   height: 464px;
 }
 
@@ -73,7 +77,8 @@ h5{
   position:absolute;
   width: 100%;
   text-align: center;
-  text-transform: capitalize;
+  font-weight: bold;
+  text-transform: uppercase;
   top: 33%;
 }
 
@@ -83,4 +88,8 @@ h5{
 
 .board-gallery > img{
   @include uniform-border();
+}
+
+.contact-info{
+  background-color: $offwhite;
 }

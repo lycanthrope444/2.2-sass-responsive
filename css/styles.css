@@ -5837,6 +5837,8 @@ img {
 .lance-mountain {
   border: 10px solid #FDFDFD;
   background-image: url("../skateboard-images/sk8er-4.png");
+  background-size: cover;
+  background-position: right;
   height: 222px; }
 
 .rodney-mullen {
@@ -5845,10 +5847,12 @@ img {
 
 .sk8er-long {
   background-image: url("../skateboard-images/sk8er-1.png");
+  background-position: center;
   height: 222px; }
 
 .sk8er-tall {
   background-image: url("../skateboard-images/sk8er-2.png");
+  background-position: right;
   height: 464px; }
 
 h5 {
@@ -5857,7 +5861,8 @@ h5 {
   position: absolute;
   width: 100%;
   text-align: center;
-  text-transform: capitalize;
+  font-weight: bold;
+  text-transform: uppercase;
   top: 33%; }
 
 .board-gallery {
@@ -5865,5 +5870,8 @@ h5 {
 
 .board-gallery > img {
   border: 10px solid #FDFDFD; }
+
+.contact-info {
+  background-color: #FDFDFD; }
 
 /*# sourceMappingURL=styles.css.map */
