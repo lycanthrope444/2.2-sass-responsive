@@ -4,6 +4,19 @@ $grid-gutter-width: 10px;
 
 $offwhite: #FDFDFD;
 
+$facebookouter: #455992;
+$facebookinner: #7683B1;
+
+$rssouter: #CC8F44;
+$rssinner: #D9AC71;
+
+$twitterouter: #6B8EC2;
+$twitterinner: #90A8D0;
+
+$youtubeouter: #B23732;
+$youtubeinner: #C56766;
+
+
 @mixin uniform-border() {
   border: 10px solid $offwhite;
   margin-top: 10px;
@@ -41,26 +54,22 @@ img{
   text-align: center;
   padding-top: 9px;
   @include grayshadow;
-}
-
-.facebook{
-  background-color: #455992;
-  color: #7683B1;
-}
-
-.rss{
-  background-color: #CC8F44;
-  color: #D9AC71;
-}
-
-.twitter{
-  background-color: #6B8EC2;
-  color: #90A8D0;
-}
-
-.youtube{
-  background-color: #B23732;
-  color: #C56766;
+  &.facebook{
+    background-color:$facebookouter ;
+    color: $facebookinner;
+  }
+  &.rss{
+    background-color: $rssouter;
+    color: $rssinner;
+  }
+  &.twitter{
+    background-color: $twitterouter;
+    color: $twitterinner;
+  }
+  &.youtube{
+    background-color: $youtubeouter;
+    color: $youtubeinner;
+  }
 }
 
 .site-links{
@@ -90,11 +99,12 @@ img{
 .peralta-logo{
   position:absolute;
   z-index: 100;
+  top: 50px;
 }
 
 .grid-control{
   position:absolute;
-  opacity: .7;
+  opacity: .5;
   top:0;
   left:0;
 }
@@ -110,6 +120,8 @@ img{
   @include grayshadow();
   position: relative;
   height: 222px;
+  background-repeat: no-repeat;
+  min-width: 100%;
 }
 
 .lance-mountain{
@@ -125,7 +137,7 @@ img{
 .sk8er-long{
   @extend .sk8er-sm;
   background-image: url('../skateboard-images/sk8er-1.png');
-  background-position: center;
+
 }
 
 .sk8er-tall{
@@ -149,10 +161,14 @@ h5{
 
 .board-gallery{
   background-color: $offwhite;
+  padding:12px 3.22% 23px 2.73%;
+  @include uniform-border;
   @include grayshadow();
-  img{
-    @include uniform-border();
-  }
+}
+
+.board-gallery >img{
+  margin-left: 1.8%;
+  margin-right: 1.8%;
 }
 
 .contact-info{
@@ -170,6 +186,5 @@ h6{
   text-transform: capitalize;
 }
 
-.socialbottom{
-  
+.social-bottom .twitter{
 }

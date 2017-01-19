@@ -5829,22 +5829,18 @@ img {
   text-align: center;
   padding-top: 9px;
   box-shadow: 0px 4px 0px #81807C; }
-
-.facebook {
-  background-color: #455992;
-  color: #7683B1; }
-
-.rss {
-  background-color: #CC8F44;
-  color: #D9AC71; }
-
-.twitter {
-  background-color: #6B8EC2;
-  color: #90A8D0; }
-
-.youtube {
-  background-color: #B23732;
-  color: #C56766; }
+  .socialbutton.facebook {
+    background-color: #455992;
+    color: #7683B1; }
+  .socialbutton.rss {
+    background-color: #CC8F44;
+    color: #D9AC71; }
+  .socialbutton.twitter {
+    background-color: #6B8EC2;
+    color: #90A8D0; }
+  .socialbutton.youtube {
+    background-color: #B23732;
+    color: #C56766; }
 
 .site-links {
   position: relative;
@@ -5872,11 +5868,12 @@ img {
 
 .peralta-logo {
   position: absolute;
-  z-index: 100; }
+  z-index: 100;
+  top: 50px; }
 
 .grid-control {
   position: absolute;
-  opacity: .7;
+  opacity: .5;
   top: 0;
   left: 0; }
 
@@ -5893,7 +5890,9 @@ img {
   margin-bottom: 10px;
   box-shadow: 0px 4px 0px #81807C;
   position: relative;
-  height: 222px; }
+  height: 222px;
+  background-repeat: no-repeat;
+  min-width: 100%; }
 
 .lance-mountain {
   background-image: url("../skateboard-images/sk8er-4.png");
@@ -5904,8 +5903,7 @@ img {
   background-image: url("../skateboard-images/sk8er-3.png"); }
 
 .sk8er-long {
-  background-image: url("../skateboard-images/sk8er-1.png");
-  background-position: center; }
+  background-image: url("../skateboard-images/sk8er-1.png"); }
 
 .sk8er-tall {
   background-image: url("../skateboard-images/sk8er-2.png");
@@ -5924,11 +5922,15 @@ h5 {
 
 .board-gallery {
   background-color: #FDFDFD;
+  padding: 12px 3.22% 23px 2.73%;
+  border: 10px solid #FDFDFD;
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: 0px 4px 0px #81807C; }
-  .board-gallery img {
-    border: 10px solid #FDFDFD;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+
+.board-gallery > img {
+  margin-left: 1.8%;
+  margin-right: 1.8%; }
 
 .contact-info {
   border: 10px solid #FDFDFD;
