@@ -5812,6 +5812,40 @@ body {
 img {
   max-width: 100%; }
 
+.social-links {
+  display: inline-block;
+  text-decoration: none; }
+
+.subscribe-header {
+  display: inline-block;
+  color: #FDFDFD; }
+
+.socialbutton {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 6px;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 9px;
+  box-shadow: 0px 4px 0px #81807C; }
+
+.facebook {
+  background-color: #455992;
+  color: #7683B1; }
+
+.rss {
+  background-color: #CC8F44;
+  color: #D9AC71; }
+
+.twitter {
+  background-color: #6B8EC2;
+  color: #90A8D0; }
+
+.youtube {
+  background-color: #B23732;
+  color: #C56766; }
+
 .site-links {
   position: relative;
   text-align: center;
@@ -5822,6 +5856,7 @@ img {
   background-color: #B32731;
   text-decoration: none;
   padding-top: 14px;
+  margin-top: 10px;
   box-shadow: 0px 4px 0px #81807C; }
 
 .feature {
@@ -5832,7 +5867,8 @@ img {
   margin-bottom: 10px;
   background-image: url("../skateboard-images/top-image.png");
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0px 4px 0px #81807C; }
 
 .peralta-logo {
   position: absolute;
@@ -5848,31 +5884,28 @@ img {
   background-color: #FDFDFD;
   border: 10px solid #FDFDFD;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 0px #81807C; }
 
 .sk8er-sm, .sk8er-long, .sk8er-tall {
   border: 10px solid #FDFDFD;
   margin-top: 10px;
   margin-bottom: 10px;
-  position: relative; }
+  box-shadow: 0px 4px 0px #81807C;
+  position: relative;
+  height: 222px; }
 
 .lance-mountain {
-  border: 10px solid #FDFDFD;
-  margin-top: 10px;
-  margin-bottom: 10px;
   background-image: url("../skateboard-images/sk8er-4.png");
   background-size: cover;
-  background-position: right;
-  height: 222px; }
+  background-position: right; }
 
 .rodney-mullen {
-  background-image: url("../skateboard-images/sk8er-3.png");
-  height: 222px; }
+  background-image: url("../skateboard-images/sk8er-3.png"); }
 
 .sk8er-long {
   background-image: url("../skateboard-images/sk8er-1.png");
-  background-position: center;
-  height: 222px; }
+  background-position: center; }
 
 .sk8er-tall {
   background-image: url("../skateboard-images/sk8er-2.png");
@@ -5890,7 +5923,8 @@ h5 {
   top: 33%; }
 
 .board-gallery {
-  background-color: #FDFDFD; }
+  background-color: #FDFDFD;
+  box-shadow: 0px 4px 0px #81807C; }
   .board-gallery img {
     border: 10px solid #FDFDFD;
     margin-top: 10px;
@@ -5900,7 +5934,11 @@ h5 {
   border: 10px solid #FDFDFD;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-shadow: 0px 4px 0px #81807C;
   background-color: #FDFDFD; }
+
+.myform-control {
+  border-radius: 0px; }
 
 h6 {
   font-size: 17px;

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>2.2 SASS Responsive</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/3556bf80d1.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -14,39 +15,65 @@
         <header>
     <!-- ******* Social links ******* -->
           <div class="row">
-            <div class="social-links col-md-offset-6">
-              <a href="subscribelink">
-                <div class="subscribe-header">
-                  <span>Subscribe</span>
-                </div>
-              </a>
-              <button type="button" class="btn btn-facebook">Facebook</button>
-              <button type="button" class="btn btn-RSS">RSS</button>
-              <button type="button" class="btn btn-twitter">Twitter</button>
-              <button type="button" class="btn btn-Youtube">Youtube</button>
+            <div class="col-md-offset-6 col-md-6">
+              <div class="social-links">
+                <a href="subscribelink">
+                  <div class="subscribe-header">
+                    <span>Subscribe</span>
+                  </div>
+                </a>
+                <a href="facebook">
+                  <div class= "socialbutton facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a href="facebook">
+                  <div class= "socialbutton rss">
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a href="facebook">
+                  <div class= "socialbutton twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a href="facebook">
+                  <div class= "socialbutton youtube">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
     <!-- ******* Site Links ********* -->
           <div class="row">
-            <div class="page-links">
+            <div class="page-links col-md-12">
               <a href="#">
-                <div class="col-md-3 site-links sk8t-news">
-                  - Sk8t news -
+                <div class="col-sm-3">
+                  <div class="site-links sk8t-news">
+                    - Sk8t news -
+                  </div>
                 </div>
               </a>
               <a href="#">
-                <div class="col-md-3 site-links skateboarders">
-                  - Skateboarders -
+                <div class="col-sm-3">
+                  <div class="site-links skateboarders">
+                    - Skateboarders -
+                  </div>
                 </div>
               </a>
               <a href="#">
-                <div class="col-md-3 site-links board-design">
-                  - Board Design -
+                <div class="col-sm-3">
+                  <div class="site-links board-design">
+                    - Board Design -
+                  </div>
                 </div>
               </a>
               <a href="#">
-                <div class="col-md-3 site-links contact-us">
-                  - contact us -
+                <div class="col-sm-3">
+                  <div class="site-links contact-us">
+                    - contact us -
+                  </div>
                 </div>
               </a>
             </div>
@@ -147,24 +174,45 @@
                 <h6>contact us for more information</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div class="row social-links">
-                  <button type="button" class="btn btn-facebook">Facebook</button>
-                  <button type="button" class="btn btn-RSS">RSS</button>
-                  <button type="button" class="btn btn-twitter">Twitter</button>
-                  <button type="button" class="btn btn-Youtube">Youtube</button>
+                  <a href="subscribelink">
+                    <div class="subscribe-header">
+                      <span>Subscribe</span>
+                    </div>
+                  </a>
+                  <a href="facebook">
+                    <div class= "socialbutton facebook social-bottom">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                  <a href="facebook">
+                    <div class= "socialbutton rss social-bottom">
+                      <i class="fa fa-rss" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                  <a href="facebook">
+                    <div class= "socialbutton twitter social-bottom">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                  <a href="facebook">
+                    <div class= "socialbutton youtube social-bottom">
+                      <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+                  </a>
                 </div>
               </div>
               <form>
                 <div class="form-group col-md-6">
-                  <label for="exampleInputEmail1"></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  <label for="exampleInputName"></label>
+                  <input type="name" class="form-control myform-control" id="exampleInputName" placeholder="Name">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="exampleInputPassword1"></label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <label for="exampleInputEmail"></label>
+                  <input type="email" class="form-control myform-control" id="exampleInputEmail" placeholder="Email">
                 </div>
                 <div class="form-group col-md-offset-6 col-md-6">
                   <label for="exampleInputPassword1"></label>
-                  <input type="message" class="form-control" placeholder="Your Message">
+                  <textarea type="message" class="form-control myform-control message-taker" rows = "4" placeholder="Your Message"></textarea>
                   <button type="button" class="btn btn-danger col-md-offset-10">Submit</button>
                 </div>
               </form>

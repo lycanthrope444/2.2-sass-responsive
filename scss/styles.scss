@@ -22,8 +22,45 @@ img{
   max-width: 100%;
 }
 
-.page-links{
+.social-links{
+  display: inline-block;
+  text-decoration: none;
+}
 
+.subscribe-header{
+  display: inline-block;
+  color: $offwhite;
+}
+
+.socialbutton{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin:6px;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 9px;
+  @include grayshadow;
+}
+
+.facebook{
+  background-color: #455992;
+  color: #7683B1;
+}
+
+.rss{
+  background-color: #CC8F44;
+  color: #D9AC71;
+}
+
+.twitter{
+  background-color: #6B8EC2;
+  color: #90A8D0;
+}
+
+.youtube{
+  background-color: #B23732;
+  color: #C56766;
 }
 
 .site-links{
@@ -36,6 +73,7 @@ img{
   background-color: #B32731;
   text-decoration: none;
   padding-top: 14px;
+  margin-top: 10px;
   @include grayshadow;
 }
 
@@ -46,6 +84,7 @@ img{
   background-image: url('../skateboard-images/top-image.png');
   background-size: cover;
   overflow: hidden;
+  @include grayshadow();
 }
 
 .peralta-logo{
@@ -63,31 +102,30 @@ img{
 .post{
   background-color: $offwhite;
   @include uniform-border();
+  @include grayshadow();
 }
 
 .sk8er-sm{
   @include uniform-border();
+  @include grayshadow();
   position: relative;
+  height: 222px;
 }
 
 .lance-mountain{
-  @include uniform-border();
   background-image: url('../skateboard-images/sk8er-4.png');
   background-size: cover;
   background-position: right;
-  height: 222px;
 }
 
 .rodney-mullen{
   background-image: url('../skateboard-images/sk8er-3.png');
-  height: 222px;
 }
 
 .sk8er-long{
   @extend .sk8er-sm;
   background-image: url('../skateboard-images/sk8er-1.png');
   background-position: center;
-  height: 222px;
 }
 
 .sk8er-tall{
@@ -111,6 +149,7 @@ h5{
 
 .board-gallery{
   background-color: $offwhite;
+  @include grayshadow();
   img{
     @include uniform-border();
   }
@@ -118,10 +157,19 @@ h5{
 
 .contact-info{
   @include uniform-border();
+  @include grayshadow();
   background-color: $offwhite;
+}
+
+.myform-control{
+  border-radius: 0px;
 }
 
 h6{
   font-size: 17px;
   text-transform: capitalize;
+}
+
+.socialbottom{
+  
 }
