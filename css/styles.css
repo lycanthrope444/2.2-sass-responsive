@@ -5841,6 +5841,18 @@ img {
   .socialbutton.youtube {
     background-color: #B23732;
     color: #C56766; }
+  .socialbutton.social-bottom-facebook {
+    background-color: #6c6c6c;
+    color: #949494; }
+  .socialbutton.social-bottom-rss {
+    background-color: #888888;
+    color: #a5a5a5; }
+  .socialbutton.social-bottom-twitter {
+    background-color: #979797;
+    color: #b0b0b0; }
+  .socialbutton.social-bottom-youtube {
+    background-color: #727272;
+    color: #969696; }
 
 .site-links {
   position: relative;
@@ -5940,7 +5952,8 @@ h5 {
   background-color: #FDFDFD; }
 
 .myform-control {
-  border-radius: 0px; }
+  border-radius: 0px;
+  box-shadow: inset 4px 4px 0 #B2B2B2; }
 
 h6 {
   font-size: 17px;
