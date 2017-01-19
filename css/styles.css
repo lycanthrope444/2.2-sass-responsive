@@ -5812,6 +5812,18 @@ body {
 img {
   max-width: 100%; }
 
+.wrapper {
+  position: relative; }
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(53, 53, 53, 0.2); }
+
 .social-links {
   display: inline-block;
   text-decoration: none; }
@@ -5896,6 +5908,36 @@ img {
   margin-bottom: 10px;
   box-shadow: 0px 4px 0px #81807C; }
 
+.skater-section {
+  position: relative; }
+
+.skater-section::before {
+  content: "sk8ers";
+  text-transform: uppercase;
+  font-size: 22px;
+  position: absolute;
+  top: 100px;
+  left: -90px;
+  height: 30px;
+  width: 83px;
+  background-color: #B32731;
+  color: #FDFDFD;
+  transform: skewx(20deg); }
+
+.skater-section::after {
+  content: "";
+  text-transform: uppercase;
+  font-size: 22px;
+  position: absolute;
+  top: 130px;
+  left: -90px;
+  height: 30px;
+  width: 83px;
+  background-color: #B32731;
+  color: #FDFDFD;
+  transform: skewx(160deg);
+  box-shadow: 2px 4px 1px #81807C; }
+
 .sk8er-sm, .sk8er-long, .sk8er-tall {
   border: 10px solid #FDFDFD;
   margin-top: 10px;
@@ -5904,23 +5946,31 @@ img {
   position: relative;
   height: 222px;
   background-repeat: no-repeat;
-  min-width: 100%; }
+  background-size: cover; }
 
 .lance-mountain {
   background-image: url("../skateboard-images/sk8er-4.png");
-  background-size: cover;
   background-position: right; }
 
 .rodney-mullen {
-  background-image: url("../skateboard-images/sk8er-3.png"); }
+  background-image: url("../skateboard-images/sk8er-3.png");
+  background-size: cover; }
 
 .sk8er-long {
-  background-image: url("../skateboard-images/sk8er-1.png"); }
+  background-image: url("../skateboard-images/sk8er-1.png");
+  background-size: 110%;
+  background-position: 0px; }
 
 .sk8er-tall {
   background-image: url("../skateboard-images/sk8er-2.png");
   background-position: right;
-  height: 464px; }
+  height: 464px;
+  /*non-functioning media query
+  @media only screen and (min-width: 768px) {
+    .sk8ter-tall{
+      height: 464px;
+    }
+  }*/ }
 
 h5 {
   color: #FDFDFD;
